@@ -11,6 +11,7 @@ static float cm= 500.0;
 //static float sm= 50.0;
 static float tp3 = 0.0;
 
+
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
 {
     int i;
@@ -24,6 +25,7 @@ void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
     }
     glEnd();
 }
+
 void triangle(int x, int y, int x1, int x2,int y1)
 {
     glBegin(GL_POLYGON);
