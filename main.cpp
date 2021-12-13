@@ -8,8 +8,20 @@
 #include <cstdio>
 using namespace std;
 static float cm= 500.0;
-//static float sm= 50.0;
 static float tp3 = 0.0;
+bool isRedlight = false;
+bool isLlight = true;
+float _nt = 0.0;
+float sun = true;
+float moon = false;
+bool night = false;
+float star = false;
+
+
+
+///////function///////
+
+
 
 
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
@@ -60,6 +72,37 @@ void rectangle1(int x1,int y1, int x2, int y2, int x3, int y3, int x4, int y4)
     glEnd();
 }
 
+void keyboard(unsigned char key, int x, int y)
+{
+    switch (key)
+    {
+    case 'r':
+        isRedlight = true;
+        break;
+    case 'g':
+        isRedlight = false;
+        break;
+    case 'n':
+        night = true;
+        Night(_nt);
+        sun=false;
+        moon = true;
+        star = true;
+       isLlight = false;
+        break;
+    case 'd':
+        sun=true;
+        night = false;
+        moon = false;
+        star = false;
+        isLlight = true;
+        glClearColor(0.3, .65, 1, 1.0);
+        break;
+    default:
+        break;
+    }
+}
+
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -76,6 +119,13 @@ void myDisplay()
     privatecar();
     glFlush();
 }
+
+void init()
+{
+    glClearColor(0.3, .70, 1, 1.0);
+    glOrtho(-300,300,-300,300,-150,500);
+}
+
 int main()
 {
     cout << "**********Welcome***********" << endl;
