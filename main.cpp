@@ -15,6 +15,7 @@ float moon = false;
 
 
 
+
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
 {
     int i;
