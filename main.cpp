@@ -14,6 +14,7 @@ static float tp3 = 0.0;
 float moon = false;
 
 
+
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
 {
     int i;
