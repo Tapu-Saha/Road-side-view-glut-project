@@ -50,6 +50,7 @@ void triangle(int x, int y, int x1, int x2,int y1)
     glVertex2d(x,y);
     glEnd();
 }
+
 void rectangle(int x, int y, int x1, int y1)
 {
     glBegin(GL_QUADS);
