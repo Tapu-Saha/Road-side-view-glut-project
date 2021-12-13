@@ -19,11 +19,14 @@ bool night = false;
 float star = false;
 
 
+
 ///////function///////
 
 
 
+
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
+
 {
     int i;
     float rad = 0;
@@ -34,6 +37,7 @@ void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
         rad = i*(3.1416/180);
         glVertex2f(x+rx*cos(rad),y+ry*sin(rad));
     }
+
     glEnd();
 }
 
@@ -48,6 +52,7 @@ void triangle(int x, int y, int x1, int x2,int y1)
     glVertex2d(x,y);
     glEnd();
 }
+
 void rectangle(int x, int y, int x1, int y1)
 {
     glBegin(GL_QUADS);
@@ -60,6 +65,7 @@ void rectangle(int x, int y, int x1, int y1)
 
     glEnd();
 }
+
 void rectangle1(int x1,int y1, int x2, int y2, int x3, int y3, int x4, int y4)
 {
     glBegin(GL_QUADS);
