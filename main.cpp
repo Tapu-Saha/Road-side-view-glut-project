@@ -41,6 +41,7 @@ void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
 }
 
 void triangle(int x, int y, int x1, int x2,int y1)
+
 {
     glBegin(GL_POLYGON);
     glVertex2d(x,y);
