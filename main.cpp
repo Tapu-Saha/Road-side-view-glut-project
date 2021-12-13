@@ -110,18 +110,26 @@ void keyboard(unsigned char key, int x, int y)
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    Sun();
-    Moon();
-    Star();
-    Building();
-    ground();
-    road();
-    street();
-    tree();
-    cloud();
-    Light();
-    privatecar();
-    glFlush();
+        Sun();
+        Moon();
+        Star();
+        Building();
+        Station();
+        Uppertree();
+        Lamppost();
+        lamplight();
+        lamplight2();
+        ground();
+        Seat();
+        road();
+        street();
+        tree();
+        cloud();
+        Light();
+        privatecar();
+        privatecar2();
+        glFlush();
+  
 }
 
 void init()
