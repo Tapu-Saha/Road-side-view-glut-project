@@ -8,6 +8,7 @@
 #include <cstdio>
 using namespace std;
 static float cm= 500.0;
+static float cm2= 500.0;
 static float tp3 = 0.0;
 bool isRedlight = false;
 bool isLlight = true;
