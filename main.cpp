@@ -23,6 +23,7 @@ void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
         rad = i*(3.1416/180);
         glVertex2f(x+rx*cos(rad),y+ry*sin(rad));
     }
+
     glEnd();
 }
 
