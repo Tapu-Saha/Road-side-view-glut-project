@@ -6,6 +6,7 @@
 #include<windows.h>
 #include<mmsystem.h>
 #include <cstdio>
+
 using namespace std;
 static float cm= 500.0;
 //static float sm= 50.0;
