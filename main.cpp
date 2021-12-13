@@ -10,6 +10,7 @@ using namespace std;
 static float cm= 500.0;
 //static float sm= 50.0;
 static float tp3 = 0.0;
+float moon = false;
 
 
 void circle(GLfloat rx,GLfloat ry,GLfloat x,GLfloat y)
@@ -75,6 +76,8 @@ void myDisplay()
     privatecar();
     glFlush();
 }
+
+
 int main()
 {
     cout << "**********Welcome***********" << endl;
